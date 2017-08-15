@@ -70,8 +70,9 @@ deps: clean-deps
 	golang.org/x/sys/windows \
 	github.com/inconshreveable/mousetrap \
 	github.com/gin-contrib/cors \
-	github.com/lxc/lxd \
-	github.com/jtopjian/lxdhelpers
+	github.com/lxc/lxd/client \
+	github.com/jtopjian/lxdhelpers \
+	golang.org/x/crypto/acme/autocert
 
 clean-dist:
 	rm -rf ./dist/${VERSION}
